@@ -1,0 +1,10 @@
+{
+  "name": "arikardasis-backend",
+  "version": "1.0.0",
+  "description": "Server sandbox",
+  "main": "index.js",
+  "repository": "git@github.com:kardasis/arikardasis-backend.git",
+  "author": "Ari Kardasis <ari.kardasis@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
