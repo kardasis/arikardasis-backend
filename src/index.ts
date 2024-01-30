@@ -7,7 +7,13 @@ import { insertTIL } from './database'
 const app: Express = express()
 app.use(cors())
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 8080
+
+app.get('/', (req: Request, res: Response) => {
+    res.contentType('application/json')
+    const s = { 'Status': 'Running' }
+    res.send(s)
+})
 
 app.post('/hi', async (req: Request, res: Response) => {
     await insertTIL({ name: 'Ari Kardasis', thing: 'MongoDB' })
